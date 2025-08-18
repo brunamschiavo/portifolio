@@ -1,0 +1,23 @@
+[{
+"title": "La Via Integrazione",
+"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem  expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?",
+"mainPhoto": "/assets/Image1_004.png",
+"sidePhotos": [ "/assets/Image1.png", "/assets/Image1_0003.png", "/assets/Image1_009.png"],
+"liked": true
+},
+
+{
+"title": "Integrazione",
+"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?",
+"mainPhoto": "/assets/Image1_0003.png",
+"sidePhotos": ["/assets/Image1_009.png", "/assets/Image1_004.png", "/assets/Image1.png"],
+"liked": true
+},
+
+{
+"title": "La Via",
+"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?",
+"mainPhoto": "/assets/Image1_009.png",
+"sidePhotos": ["/assets/Image1.png","/assets/Image1_004.png", "/assets/Image1_0003.png"],
+"liked": true
+}]
