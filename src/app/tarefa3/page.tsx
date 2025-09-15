@@ -7,28 +7,47 @@ import imagemQuatro from "@/assets/Image1_003.png";
 import { Project } from "@/components/project";
 
 export default function Tarefa3() {
+  const projetos = [
+    {
+      title: "La Via Integrazione",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem  expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?",
+      mainPhoto: imagemPrincipal,
+      sidePhotos: [imagemTres, imagemQuatro, imagemDois],
+      liked: true,
+    },
+
+    {
+      title: "Integrazione",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?",
+      mainPhoto: imagemQuatro,
+      sidePhotos: [imagemDois, imagemPrincipal, imagemTres],
+      liked: true,
+    },
+
+    {
+      title: "La Via",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?",
+      mainPhoto: imagemDois,
+      sidePhotos: [imagemTres, imagemPrincipal, imagemQuatro],
+      liked: true,
+    },
+  ];
   return (
     <main className="flex justify-center items-center flex-col p-8 gap-12 container mx-auto max-w-3xl">
-      <Project
-        title="La Via Integrazione"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?"
-        mainPhoto={imagemPrincipal}
-        sidePhotos={[imagemTres, imagemQuatro, imagemDois]}
-      />
-
-      <Project
-        title="Integrazione"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?"
-        mainPhoto={imagemQuatro}
-        sidePhotos={[imagemDois, imagemPrincipal, imagemTres]}
-      />
-
-      <Project
-        title="La Via"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum nesciunt exercitationem quos quia neque optio animi rem expedita nobis excepturi odio odit, quidem beatae, veniam vitae sapiente ipsum non?"
-        mainPhoto={imagemDois}
-        sidePhotos={[imagemTres, imagemPrincipal, imagemQuatro]}
-      />
+      <h1>Quantidade de Projetos: {projetos.length}</h1>
+      {projetos.map((projeto) => {
+        return (
+          <Project
+            title={projeto.title}
+            description={projeto.description}
+            mainPhoto={projeto.mainPhoto}
+            sidePhotos={projeto.sidePhotos}
+          />
+        );
+      })}
     </main>
   );
 }

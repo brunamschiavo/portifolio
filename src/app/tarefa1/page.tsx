@@ -8,7 +8,6 @@ export default function Tarefa1() {
 
   return (
     <main className="flex justify-center items-center flex-col">
-      <h1 className=" p-2 w-32 text-center"></h1>
       <div className="p-2">
         <h2>Olá, {nome}</h2>
       </div>

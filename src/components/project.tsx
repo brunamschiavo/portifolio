@@ -2,10 +2,6 @@
 
 import Image from "next/image";
 
-import imagemPrincipal from "@/assets/Image1_004.png";
-import imagemDois from "@/assets/Image1_009.png";
-import imagemTres from "@/assets/Image1.png";
-import imagemQuatro from "@/assets/Image1_003.png";
 import { HeartIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 
@@ -47,7 +43,7 @@ export function Project(props: {
             src={sidePhotos[2]}
             alt="imagemDois"
           />
-        </div>{" "}
+        </div>
       </div>
       <button
         className={`px-4 rounded-xl w-32 transition-all hover:brightness-90 cursor-pointer flex items-center gap-2 justify-center 
@@ -56,11 +52,8 @@ export function Project(props: {
           setLike(!like);
         }}
       >
-        Curtir{" "}
-        <HeartIcon
-          className={`${like ? "text-gray-300" : "text-gray-300"}`}
-          weight="duotone"
-        />
+        Curtir
+        <HeartIcon className="text-gray-300" weight="duotone" />
       </button>
     </div>
   );

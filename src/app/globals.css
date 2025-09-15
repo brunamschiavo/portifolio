@@ -3,4 +3,6 @@
 @theme {
   --font-sans: var(--font-quicksand);
   --font-gothic: var(--font-league-gothic);
+
+  --color-bluegray-500: #e8e8e8;
 }

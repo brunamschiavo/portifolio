@@ -30,13 +30,14 @@ export default function RootLayout({
       lang="en"
       className={` ${quicksand.variable} ${leagueGothic.variable}`}
     >
-      <body className={`bg-purple-100 font-sans`}>
+      <body className={`bg-bluegray-500 font-sans`}>
         <div className="flex justify-center items-center gap-8">
           <Link href="/">Home</Link>
           <Link href="/tarefa1">Olá</Link>
           <Link href="/tarefa2">Calculadora</Link>
           <Link href="/tarefa3">Arquitetura</Link>
           <Link href="/tarefa4">Biblioteca</Link>
+          <Link href="/tarefa5">Programação</Link>
         </div>
         {children}
       </body>
